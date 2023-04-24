@@ -1,0 +1,25 @@
+<!-- list of top artists  -->
+<div class = "top-artists" style="margin: 10%;">
+    <h2>Welcome, here are your Top Artists</h2><br>
+    <!-- <p>Top artists: </p><br> -->
+
+    <!-- <ol *ngFor="let artist of artists "> -->
+        <!-- <li>{{ artist.id }}</li> -->
+        
+    <!-- </ol> -->
+    <table *ngFor="let artist of artists ">
+        <tbody>
+            <tr scope="row">
+                <mat-label>{{ artist.name }}</mat-label>
+            </tr>
+            <!-- <tr scope="row">
+                <mat-label>Britney Spears</mat-label>
+            </tr>
+            <tr scop="row">
+                <mat-label>Dua Lipa</mat-label> -->
+            <!-- </tr> -->
+        </tbody>
+    </table>
+    <br>
+    <button type="submit" [routerLink]="['/chat']">Let's Chat!</button>
+</div>
